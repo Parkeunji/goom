@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background-color:#507e39;
+}
+
+@-webkit-keyframes anim {
+    0% {
+        -webkit-transform: translate(0px,190px);
+    }
+    40% {
+        -webkit-transform: translate(100px,190px);}
+    60%{
+    	 -webkit-transform: translate(100px,140px);
+    }
+      75%{
+    	 -webkit-transform: translate(100px,190px);
+    }
+    100% {
+    	 -webkit-transform: translate(0px,190px);
+    }
+
+       
+    
+}
+
+#goom {
+    position:absolute;
+    width:80px;
+    height:80px;
+    -webkit-mask-image:url(../img/goom.png);
+    -webkit-mask-size:80px 80px;
+    -webkit-transform: translate(0px,180px);
+    -webkit-animation: anim 3s infinite;
+}
+
+
+#stage {
+    position:relative;
+    margin:auto;
+    background-color:#8ec772;
+    width: 400px;
+    height: 300px;    
+    -webkit-perspective:300px center center;
+}
+
+#scene {
+    position:absolute;
+    width:400px;
+    height:300px;
+    /*-webkit-transform: rotateX(0deg)rotateY(10deg);*/
+    -webkit-transform-style:preserve-3d;
+}
+
+#floor {
+    position: absolute;
+    width : 400px;
+    height : 200px;
+    background-color: #ffd1a0;
+    -webkit-transform: translate(0px, 150px) rotateX(90deg);
+}
+
+#back {
+    position: absolute;
+    width : 400px;
+    height : 200px;
+    background-color:white;
+    -webkit-transform: translate3d(0px, 50px, -100px);
+}
+
+#dodo {
+    position:absolute;
+    width:130px;
+    height:130px;
+    -webkit-mask-image:url(../img/dodo.png);
+    -webkit-mask-size:130px 130px;
+    -webkit-transform: translate(210px,140px);
+    
+}
+
+
